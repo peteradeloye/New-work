@@ -9,6 +9,7 @@ body {
     position:absolute;
     top: 0;
     left: 2px;
+    margin:0 100px;
 }
 
 a {
@@ -29,6 +30,7 @@ nav {
     position:absolute;
     top: 0;
     right: 2px;
+    margin: 10px 100px;
 }
 
 li {
@@ -144,4 +146,58 @@ li {
 
 .testimonial {
     text-align: center;
+}
+
+.testimonial_card {
+    margin-top: 50px;
+    background: #f4f4f4;
+    display: flex;
+    align-items: right;
+    text-align: left;
+    border: 10px solid #f4f4f4;
+    border-radius: 10px;
+}
+.testimonial_card img {
+    width: 100px;
+    border-radius: 50px;
+    float: left;
+    padding: 10px;
+}
+
+.testimonial_div {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxs {
+    width: 10px;
+    height: 1px;
+    background:lightgray;
+    padding: 10px; 
+    margin: 10px;
+    gap: 50px;
+    border-radius: 4px;
+}
+
+form {
+    mix-width: 250px;
+}
+
+input {
+    border: 1px solid #fff;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+form button {
+    background: orange;
+    color: #fff;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 600;
+
 }
