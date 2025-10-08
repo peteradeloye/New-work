@@ -61,63 +61,110 @@
                 </form>
             </div>
         </section>
-        <section id="service" class="service">
-            <div>
-                <h2>Services</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sed illo sapiente iure doloribus nesciunt officia similique reiciendis dolores aperiam quasi a fuga nulla corporis dicta harum, nihil, placeat eius.</p>
-                <div class="container">
-                    <div class="box">
-                        <h4>HTML</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, cupiditate.</p>
-                    </div>
-                    <div class="box"> 
-                        <h4>CSS</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, et!</p>
-                    </div>
-                    <div class="box">
-                        <h4>Java script</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, neque?</p>
-                    </div>
-                    <div class="box">
-                        <h4>React</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, illum?</p>
-                    </div>
+        <section id="service" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Services</h2>
+                    <p class="section-description">Delivering high-quality web development solutions tailored to your needs. Here are the key services I offer to help bring your digital vision to life.</p>
+                </div>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Frontend Development</h3>
+                        <p class="service-card__description">Building responsive and interactive user interfaces using modern HTML5, CSS3, and accessibility best practices.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">UI/UX Design</h3>
+                        <p class="service-card__description">Creating intuitive and engaging user experiences with modern design principles and user-centered approach.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 18l6-6-6-6"></path><path d="M8 6l-6 6 6 6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">JavaScript Development</h3>
+                        <p class="service-card__description">Implementing complex functionalities and interactive features using modern JavaScript and frameworks.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">React Applications</h3>
+                        <p class="service-card__description">Developing modern web applications using React ecosystem with focus on performance and maintainability.</p>
+                    </article>
                 </div>
             </div>
         </section>
-        <section id="project" class="project">
-            <div>
-                <h2>My Projects</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates ex nihil a odit aliquid quis quibusdam, aliquam placeat maiores ut esse cupiditate tenetur mollitia ipsam molestiae impedit unde nobis nam et magnam. Doloremque vel consequuntur sed a quam incidunt quidem unde velit, obcaecati dolore ex reprehenderit atque ullam quod!</p>
-                <ul class="project ul">
-                    <li>All</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Java script</li>
-                    <li>React</li>
-                </ul>
-                <div class="project_card">
-                    <div>
-                        <img src="images/computer4.jpg" alt="Computer with code">
-                        <div class="project_content">
-                            <p>HTML</p>
-                            <h5>Aircalling Landing Page Design</h5>
+        <section id="project" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-description">Explore some of my recent work showcasing my expertise in web development and design. Each project represents a unique challenge and creative solution.</p>
+                </div>
+                
+                <div class="projects__filter">
+                    <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="html">HTML</button>
+                    <button class="filter-btn" data-filter="css">CSS</button>
+                    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                    <button class="filter-btn" data-filter="react">React</button>
+                </div>
+
+                <div class="projects__grid">
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="images/computer4.jpg" alt="Aircalling Landing Page preview" loading="lazy">
+                            <div class="project-card__overlay">
+                                <a href="#" class="btn btn--secondary">View Project</a>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <img src="images/computer2.jpg" alt="Computer">
-                        <div class="project_content">
-                            <p>CSS</p>
-                            <h5>Business Landing Page Design</h5>
+                        <div class="project-card__content">
+                            <span class="project-card__tag">HTML & CSS</span>
+                            <h3 class="project-card__title">Aircalling Landing Page</h3>
+                            <p class="project-card__description">A modern and responsive landing page for a cloud telephony service.</p>
                         </div>
-                    </div>
-                    <div>
-                        <img src="images/computer3.jpg" alt="computer">
-                        <div class="project_content" >
-                            <p>Java script</p>
-                            <h5>Ecom Web Page Design</h5>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="images/computer2.jpg" alt="Business Landing Page preview" loading="lazy">
+                            <div class="project-card__overlay">
+                                <a href="#" class="btn btn--secondary">View Project</a>
+                            </div>
                         </div>
-                    </div>
+                        <div class="project-card__content">
+                            <span class="project-card__tag">React & CSS</span>
+                            <h3 class="project-card__title">Business Landing Page</h3>
+                            <p class="project-card__description">A dynamic business website with modern UI/UX principles.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="images/computer3.jpg" alt="E-commerce Website preview" loading="lazy">
+                            <div class="project-card__overlay">
+                                <a href="#" class="btn btn--secondary">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-card__tag">JavaScript & React</span>
+                            <h3 class="project-card__title">E-commerce Website</h3>
+                            <p class="project-card__description">A full-featured online shopping platform with cart and checkout.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
