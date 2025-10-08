@@ -3,36 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New work</title>
+    <meta name="description" content="Peter Adeloye - Web Developer Portfolio">
+    <meta name="keywords" content="web development, frontend developer, HTML, CSS, JavaScript, React">
+    <meta name="author" content="Peter Adeloye">
+    <title>Peter Adeloye | Web Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <body>
-    <header>
-        <div class="container">
-            <h2 class="h1_name">PETER ADELOYE</h2>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#service">Services</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#testimonial">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="btn">Download CV</li>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#home" class="logo">PETER ADELOYE</a>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#service" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#testimonial" class="nav__link">Testimonials</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#" class="btn btn--primary" download>Download CV</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-        <section id="home" class="home">
-            <div>
-                <p>Hi I am</p>
-                <p class="name">Peter Adeloye</p>
-                <h1>WEB PAGE DEVELOPER</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Consequuntur dolorem accusantium modi delectus voluptas quam quisquam numquam illum necessitatibus doloremque.</p>
-                <p class="btn">Hire Me</p>
+        <section id="home" class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <p class="hero__subtitle">Hi, I am</p>
+                    <h1 class="hero__title">
+                        <span class="hero__name">Peter Adeloye</span>
+                        <span class="hero__profession">Web Developer</span>
+                    </h1>
+                    <p class="hero__description">Expert web developer specializing in creating modern, responsive, and user-friendly websites. Let's work together to bring your vision to life.</p>
+                    <a href="#contact" class="btn btn--primary">Hire Me</a>
+                </div>
+                <div class="hero__image">
+                    <img src="images/A Man.jpg" alt="Peter Adeloye - Web Developer" width="400" height="400">
+                </div>
             </div>
-            <img src="images/A Man.jpg" alt="A Man">
-        </section> 
+        </section>
         <section id="about" class="about">
             <img src="images/A Man.jpg" alt="Image of a man">
             <div>
